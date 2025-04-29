@@ -1,0 +1,52 @@
+/*
+===========================================
+ SISTEMA DE CONTROLE DE ENTREGAS - README
+===========================================
+
+DESCRIÇÃO:
+Este sistema em Java permite cadastrar clientes, motoristas, veículos e entregas.
+Cada entrega é associada a um cliente, um motorista e um veículo, e o valor é calculado
+com base na distância e no valor por quilômetro informado.
+
+ ESTRUTURA DO PROJETO:
+- Pessoa.java: Classe abstrata base para Cliente e Motorista.
+- Cliente.java: Herda de Pessoa, representa o cliente da entrega.
+- Motorista.java: Herda de Pessoa, representa quem realiza a entrega.
+- Veiculo.java: Representa os veículos cadastrados.
+- Entrega.java: Armazena dados da entrega e implementa a interface Frete.
+- Frete.java: Interface com o método calcularValor().
+- Main.java: Classe principal com menu de interação via terminal.
+
+ COMO EXECUTAR:
+1. Certifique-se de ter o Java instalado.
+2. Compile todos os arquivos .java no terminal:
+   javac *.java
+3. Execute o programa:
+   java Main
+
+ FUNCIONALIDADES:
+- Cadastro de clientes, motoristas e veículos.
+- Registro de entregas com seleção dos itens cadastrados.
+- Cálculo automático do valor da entrega (distância x valor por km).
+- Listagem de todas as entregas registradas.
+
+ MENU:
+1 - Cadastrar Cliente
+2 - Cadastrar Motorista
+3 - Cadastrar Veículo
+4 - Cadastrar Entrega
+5 - Listar Entregas
+0 - Sair
+
+ EXEMPLO:
+- Cliente: João / Motorista: Maria / Veículo: Caminhão
+- Distância: 10 km / Valor por km: R$5.00
+→ Valor da entrega: R$50.00
+
+ UTILIDADES:
+- Sempre cadastre pelo menos um cliente, um motorista e um veículo antes de criar uma entrega para evitar futuros problemas
+
+
+ AUTOR: Ricardo
+ Primeira Versão.
+*/
